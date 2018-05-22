@@ -1,0 +1,28 @@
+#+TITLE: Fying
+
+A lisp language that compiles to [[http://terralang.org/][Terra]]. Written and inspired by
+[[https://fennel-lang.org/][Fennel]].
+
+* Why Fying?
+
+Well, I've wanted a lisp that has good support for low level
+programming for many many years. Lisp is very expressive and the
+interactive style development offered by [[https://common-lisp.net/project/slime/][SLIME]] is sorely missed
+whenever I'm working in a non-lisp. As well as the powerful paredit.
+
+From what I've been able to find, there are only lisps that are either
+very high level or low level only (see [[https://github.com/tomhrr/dale][Dale]]), with no interactivity.
+
+After procrastinating for years about making my own lisp environment,
+after messing a little bit with Fennel, I remembered Terra and an
+unholy idea came to mind:
+
+Write a lisp in a lisp which compiles to lua (Fennel), which compiles to terra,
+which itself uses luajit and compiles its own native code.
+
+An idea whacky enough to be difficult to describe without grammatical
+ambiguity.
+
+Sounds terrifying.
+
+... See what I did there?
